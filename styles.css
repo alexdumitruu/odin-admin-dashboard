@@ -1,16 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 .container {
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
-} 
+}
 
 .sidebar {
-    background-color: rgb(37, 170, 214);
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 1.5fr;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    background-color: rgb(12, 166, 255);
+    padding: 20px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
 }
+
+.sidebar p {
+    margin: 0;
+}
+
+.icon {
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(213deg) brightness(105%) contrast(103%);
+}
+
+.top-part {
+    font-size: 26px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+/* .middle-part, .bottom-part {
+    display: grid;
+    grid-template: 1fr 3fr / repeat();
+} */
 
 .header {
     background-color: white;
